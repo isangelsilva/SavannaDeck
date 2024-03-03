@@ -1,0 +1,47 @@
+/*------------------------------
+        NAVBAR MENU
+-------------------------------*/
+
+.nav {
+        background-color: $bgColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 5%;
+
+        &bar {
+                &_links {
+                        display: flex;
+
+                        & li {
+                                padding: 0px 10px;
+                        }
+                }
+
+        }
+
+}
+
+.logo {
+        width: 80px;
+}
+
+.navbar_links_text,
+.bttn {
+        display: none;
+}
+
+.navbar_links_icons {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+}
+
+.navbar_links_icons_img {
+        object-fit: contain;
+        width: 100%;
+        padding: 8px;
+}
+
