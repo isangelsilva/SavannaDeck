@@ -1,4 +1,10 @@
+/*------------------------------
+     FUENTES Y SCRIPTS
+-------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&family=Jacques+Francois&display=swap");
+/*------------------------------
+     BASE
+-------------------------------*/
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +13,18 @@
   list-style: none;
   box-sizing: border-box;
   font-family: "inter";
-  font-weight: 400;
+  font-weight: 800;
   font-size: 16px;
+  color: #000000;
 }
 
+::selection {
+  background-color: #DEC378;
+}
+
+/*------------------------------
+     COMPONETS
+-------------------------------*/
 /*------------------------------
         NAVBAR MENU
 -------------------------------*/
@@ -49,6 +63,76 @@
   object-fit: contain;
   width: 100%;
   padding: 8px;
+}
+
+/*------------------------------
+     LAYOUT
+-------------------------------*/
+/*------------------------------
+        NAVBAR MENU
+         320PX
+-------------------------------*/
+@media (max-width: 320px) {
+  .navbar_links_icons {
+    display: none;
+  }
+}
+/*------------------------------
+        NAVBAR MENU
+         768PX
+-------------------------------*/
+@media (min-width: 768px) {
+  .nav {
+    padding: 30px 10%;
+  }
+  .navbar_links li {
+    padding: 0px 15px;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .navbar_links_text {
+    display: block;
+    text-decoration-color: transparent;
+    cursor: pointer;
+    transition: 1.5s;
+  }
+  .navbar_links_text:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    text-decoration-color: #DEC378;
+  }
+  .navbar_links_icons {
+    display: none;
+  }
+  .bttn {
+    display: block;
+  }
+  .bttn button {
+    cursor: pointer;
+    background-color: #DEC378;
+    padding: 9px 25px;
+    border: solid 1px transparent;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  .bttn button:hover {
+    background-color: #ffeebe;
+    border: solid 1px #8b7947;
+  }
+}
+/*------------------------------
+        NAVBAR MENU
+         1280px
+-------------------------------*/
+@media (min-width: 1280px) {
+  .nav {
+    padding: 30px 20%;
+  }
+  .navbar_links li {
+    padding: 0px 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

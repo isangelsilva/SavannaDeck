@@ -1,0 +1,99 @@
+/*------------------------------
+        NAVBAR MENU
+         320PX
+-------------------------------*/
+@media (max-width: 320px) {
+    .navbar_links_icons {
+        display: none;
+    }
+}
+
+/*------------------------------
+        NAVBAR MENU
+         768PX
+-------------------------------*/
+
+@media (min-width: 768px) {
+
+    .nav {
+        padding: 30px 10%;
+
+        &bar {
+            &_links {
+
+                & li {
+                    padding: 0px 15px;
+                }
+            }
+
+        }
+    }
+
+    .logo {
+        cursor: pointer;
+    }
+
+    .navbar_links_text {
+        display: block;
+        text-decoration-color: transparent;
+        cursor: pointer;
+        transition: 1.5s;
+
+        &:hover {
+            text-decoration-line: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 10px;
+            text-decoration-color: $secondaryColor;
+        }
+
+    }
+
+    .navbar_links_icons {
+        display: none;
+    }
+
+
+    .bttn {
+        display: block;
+
+
+        button {
+            cursor: pointer;
+            background-color: $secondaryColor;
+            padding: 9px 25px;
+            border: solid 1px transparent;
+            border-radius: 30px;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #ffeebe;
+                border: solid 1px #8b7947;
+            }
+        }
+    }
+}
+
+
+
+/*------------------------------
+        NAVBAR MENU
+         1280px
+-------------------------------*/
+
+@media (min-width: 1280px) {
+
+    .nav {
+        padding: 30px 20%;
+
+        &bar {
+            &_links {
+
+                & li {
+                    padding: 0px 20px;
+                }
+            }
+
+        }
+    }
+
+}

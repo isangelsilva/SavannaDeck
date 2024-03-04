@@ -1,12 +1,30 @@
+    
+/*------------------------------
+     FUENTES Y SCRIPTS
+-------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&family=Jacques+Francois&display=swap');
 
-@import 'base/reset';
+/*------------------------------
+     BASE
+-------------------------------*/
+
 @import 'base/vars';
+@import 'base/reset';
+
+/*------------------------------
+     COMPONETS
+-------------------------------*/
 
 @import 'components/navbar';
+
+/*------------------------------
+     LAYOUT
+-------------------------------*/
 
 @import 'layout/index';
 @import 'layout/savannah';
 @import 'layout/thedeck';
 @import 'layout/themerch';
 @import 'layout/theread';
+@import 'layout/mediaqueries';
