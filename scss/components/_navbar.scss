@@ -45,3 +45,27 @@
         padding: 8px;
 }
 
+.nav_neg {
+        background-color: $mainColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 5%;
+
+        &bar {
+                &_links {
+                        display: flex;
+
+                        & li {
+                                padding: 0px 10px;
+                        }
+                }
+
+        }
+}
+
+.navbar_links_text_neg{
+        display: none;
+        color: white;
+}
+

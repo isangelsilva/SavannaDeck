@@ -65,6 +65,25 @@
   padding: 8px;
 }
 
+.nav_neg {
+  background-color: #012F3D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5%;
+}
+.nav_negbar_links {
+  display: flex;
+}
+.nav_negbar_links li {
+  padding: 0px 10px;
+}
+
+.navbar_links_text_neg {
+  display: none;
+  color: white;
+}
+
 /*------------------------------
      LAYOUT
 -------------------------------*/
