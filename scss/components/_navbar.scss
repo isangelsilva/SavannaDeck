@@ -2,31 +2,34 @@
         NAVBAR MENU
 -------------------------------*/
 
-.nav {
+.nav,
+.nav_neg {
         background-color: $bgColor;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 30px 5%;
+}
 
-        &bar {
-                &_links {
-                        display: flex;
 
-                        & li {
-                                padding: 0px 10px;
-                        }
-                }
+.nav_neg {
+        background-color: $mainColor;
+}
 
+
+.navbar_links {
+        display: flex;
+
+        & li {
+                padding: 0px 10px;
         }
-
 }
 
 .logo {
         width: 80px;
 }
 
-.navbar_links_text,
+.navbar_links_text, .navbar_links_textneg,
 .bttn {
         display: none;
 }
@@ -44,28 +47,3 @@
         width: 100%;
         padding: 8px;
 }
-
-.nav_neg {
-        background-color: $mainColor;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 5%;
-
-        &bar {
-                &_links {
-                        display: flex;
-
-                        & li {
-                                padding: 0px 10px;
-                        }
-                }
-
-        }
-}
-
-.navbar_links_text_neg{
-        display: none;
-        color: white;
-}
-

@@ -1,31 +1,36 @@
 /*------------------------------
-        NAVBAR MENU
-         320PX
--------------------------------*/
+        320PX 320PX
+------------------------------*/
 @media (max-width: 320px) {
+
+    /*------------------------------
+         NAVBAR
+    -------------------------------*/
+
     .navbar_links_icons {
         display: none;
     }
 }
 
 /*------------------------------
-        NAVBAR MENU
-         768PX
+         768PX 768PX
 -------------------------------*/
 
 @media (min-width: 768px) {
 
-    .nav {
+    /*------------------------------
+         NAVBAR
+    -------------------------------*/
+
+
+    .nav,
+    .nav_neg {
         padding: 30px 10%;
+    }
 
-        &bar {
-            &_links {
-
-                & li {
-                    padding: 0px 15px;
-                }
-            }
-
+    .navbar_links {
+        & li {
+            padding: 0px 15px;
         }
     }
 
@@ -33,7 +38,8 @@
         cursor: pointer;
     }
 
-    .navbar_links_text {
+    .navbar_links_text,
+    .navbar_links_textneg {
         display: block;
         text-decoration-color: transparent;
         cursor: pointer;
@@ -46,6 +52,10 @@
             text-decoration-color: $secondaryColor;
         }
 
+    }
+
+    .navbar_links_textneg {
+        color: white;
     }
 
     .navbar_links_icons {
@@ -71,29 +81,110 @@
             }
         }
     }
+
+    /*------------------------------
+        INDEX: HEADER
+    -------------------------------*/
+
+
+    .header_content {
+        padding: 20px 15%;
+
+        &_img {
+            width: 70%;
+            & img{
+                &:hover{
+                    width: 100%;
+                }
+            }
+        }
+
+        &_title {
+            font-size: 56px;
+            animation: slideUp 0.5s ease-in-out 1;
+        }
+
+    }
+
+
+
+
+    /*------------------------------
+         FOOTER
+    -------------------------------*/
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10% 50px;
+
+        & img {
+            order: 2;
+        }
+
+        & h2 {
+            order: 1;
+        }
+
+        & h3 {
+            order: 3;
+        }
+
+    }
+
 }
 
 
 
 /*------------------------------
-        NAVBAR MENU
-         1280px
+         1280px 1280px
 -------------------------------*/
 
 @media (min-width: 1280px) {
 
-    .nav {
+    /*------------------------------
+         NAVBAR
+    -------------------------------*/
+
+    .nav,
+    .nav_neg {
         padding: 30px 20%;
 
-        &bar {
-            &_links {
+    }
 
-                & li {
-                    padding: 0px 20px;
-                }
-            }
-
+    .navbar_links {
+        & li {
+            padding: 0px 20px;
         }
+    }
+
+        /*------------------------------
+        INDEX: HEADER
+    -------------------------------*/
+
+
+    .header_content {
+        padding: 20px 20%;
+
+        &_img {
+            width: 60%;
+        }
+
+        &_title {
+            font-size: 70px;
+        }
+
+    }
+
+    /*------------------------------
+         FOOTER
+    -------------------------------*/
+
+    footer {
+        padding: 10px 20% 50px;
     }
 
 }

@@ -1,0 +1,29 @@
+.header {
+    background-color: $bgColor;
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 5%;
+        text-align: center;
+
+        &_title {
+            font-family: $mainFont;
+            font-weight: 800;
+            font-size: 40px;
+            letter-spacing: -0.04em;
+            color: #000000;
+        }
+
+        &_img {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+
+            & img {
+                width: 95%;
+                transition: 1s;
+            }
+        }
+    }
+}

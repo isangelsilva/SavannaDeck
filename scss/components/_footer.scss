@@ -1,0 +1,28 @@
+footer {
+    background-color:$darkColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 5% 50px;
+
+    & h2,
+    h3 {
+        font-family: 'inter';
+        font-weight: 200;
+        font-size: 12px;
+        color: $bgColor;
+        padding: 5px;
+    }
+
+    & h3 {
+        font-weight: 800;
+
+    }
+
+    & img {
+        width: 100px;
+        margin: auto;
+        padding: 20px;
+    }
+}
