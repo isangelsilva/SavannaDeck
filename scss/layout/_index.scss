@@ -27,3 +27,64 @@
         }
     }
 }
+
+.cards {
+    background-color: #012F3D;
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0% 60px;
+
+        &_txt {
+            font-family: 'Jacques Francois', serif;
+            font-weight: 200;
+            font-size: 30px;
+            text-align: center;
+            color: #ffffff;
+            padding: 40px 10% 20px;
+        }
+
+        &_line {
+            text-align: center;
+            color: #D0B556;
+            padding: 20px;
+        }
+
+        &_img {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            overflow: hidden;
+
+            & img {
+                width: 800px;
+            }
+
+        }
+
+        &_bttn {
+            margin: auto;
+        }
+
+    }
+}
+
+.bttn_secundary {
+    background-color: #dec37800;
+    color: white;
+    font-weight: 600;
+    padding: 9px 25px;
+    border: solid 1px #D0B556;
+    border-radius: 30px;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: #f5de9f;
+        border: solid 1px #4d442b;
+        color: #002836;
+
+    }
+
+}
