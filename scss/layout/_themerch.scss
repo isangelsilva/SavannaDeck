@@ -1,13 +1,13 @@
 .merch {
     background-color: $bgColor;
 
-    
+
     &_items {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px 10% 60px;
-        
+
 
         &_txt {
             display: flex;
@@ -25,7 +25,7 @@
                 padding: 20px 0;
             }
 
-            
+
 
             &_bttn {
                 padding: 30px 0;
@@ -47,9 +47,56 @@
             width: 300px;
 
             & img {
-                 width: 100%;
+                width: 100%;
             }
-     }
+        }
 
     }
+}
+
+.store {
+    background-color: $bgColor;
+    display: grid;
+    padding: 0 10% 60px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+    gap: 40px 10px; 
+    
+   
+
+    &_items {
+        position: relative;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            
+        }
+
+        & h3{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 20px;
+            color: black;
+            font-size: 12px;
+        }
+    }
+}
+
+.merch_title{
+    background-color: $bgColor;
+    text-align: center;
+    font-family: $mainFont;
+    font-weight: 800;
+    font-size: 28px;
+    padding-bottom: 80px;
 }
