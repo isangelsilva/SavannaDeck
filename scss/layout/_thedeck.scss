@@ -1,0 +1,54 @@
+.deck {
+
+    &_content {
+
+        &_cards {
+            background-color: $lightColor;
+        }
+
+        &_cards2 {
+            background-color: $bgColor;
+        }
+
+        &_cards,
+        &_cards2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 5%;
+
+            &_img {
+                width: 250px;
+                height: auto;
+
+                & img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &_txt {
+                padding: 20px 0;
+                text-align: center;
+                width: 300px;
+
+                & h2 {
+                    font-family: $secondaryFont;
+                    font-weight: 200;
+                    font-size: 28px;
+                    padding-bottom: 20px;
+                }
+
+                & p {
+                    font-family: $mainFont;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.5em;
+                    color: #000000
+                }
+            }
+        }
+
+    }
+}

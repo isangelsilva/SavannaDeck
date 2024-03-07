@@ -41,6 +41,37 @@
     opacity: 100%;
   }
 }
+@keyframes sideRight {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes sideLeft {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@keyframes ramdon {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /*------------------------------
         NAVBAR MENU
 -------------------------------*/
@@ -121,11 +152,11 @@ footer img {
 .header_content {
   display: flex;
   flex-direction: column;
-  padding: 20px 5%;
+  padding: 20px 5% 70px;
   text-align: center;
 }
 .header_content_title {
-  font-family: "inter";
+  font-family: "inter", helvetica, arial;
   font-weight: 800;
   font-size: 40px;
   letter-spacing: -0.04em;
@@ -140,6 +171,12 @@ footer img {
   width: 95%;
   transition: 1s;
 }
+.header_bttn button {
+  background-color: #DEC378;
+  padding: 12px 40px;
+  border: solid 1px transparent;
+  border-radius: 30px;
+}
 
 .cards {
   background-color: #012F3D;
@@ -148,19 +185,19 @@ footer img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 0% 60px;
+  padding: 80px 0%;
 }
 .cards_content_txt {
   font-family: "Jacques Francois", serif;
-  font-weight: 200;
-  font-size: 30px;
+  font-weight: 100;
+  font-size: 26px;
   text-align: center;
   color: #ffffff;
-  padding: 40px 10% 20px;
+  padding: 10px 10%;
 }
 .cards_content_line {
   text-align: center;
-  color: #D0B556;
+  color: #DEC378;
   padding: 20px;
 }
 .cards_content_img {
@@ -170,25 +207,228 @@ footer img {
   overflow: hidden;
 }
 .cards_content_img img {
-  width: 800px;
+  width: 770px;
 }
 .cards_content_bttn {
   margin: auto;
 }
 
 .bttn_secundary {
-  background-color: rgba(222, 195, 120, 0);
+  background-color: transparent;
   color: white;
-  font-weight: 600;
-  padding: 9px 25px;
-  border: solid 1px #D0B556;
+  padding: 12px 40px;
+  border: solid 1px #DEC378;
   border-radius: 30px;
   transition: 0.5s;
 }
 .bttn_secundary:hover {
-  background-color: #f5de9f;
+  background-color: #DEC378;
   border: solid 1px #4d442b;
-  color: #002836;
+  color: #012F3D;
+}
+
+.carddeck {
+  background-color: #ECEAE2;
+}
+.carddeck_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10% 60px;
+}
+.carddeck_cards_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carddeck_cards_txt p {
+  text-align: center;
+  padding: 20px 0;
+}
+.carddeck_cards_txt h2 {
+  font-family: "inter", helvetica, arial;
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+}
+.carddeck_cards_txt_bttn {
+  padding: 30px 0;
+}
+.carddeck_cards_txt_bttn button {
+  cursor: pointer;
+  color: white;
+  background-color: #012F3D;
+  padding: 12px 40px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+}
+.carddeck_cards_img {
+  width: 300px;
+}
+.carddeck_cards_img img {
+  width: 100%;
+}
+
+.savannah {
+  display: flex;
+  justify-content: center;
+  background-color: #012F3D;
+  position: relative;
+  height: 80vh;
+}
+.savannah_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 5%;
+}
+.savannah_intro_title {
+  z-index: 2;
+}
+.savannah_intro_title h2 {
+  color: white;
+  font-family: "Jacques Francois", serif;
+  font-weight: normal;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+.savannah_intro_title p {
+  font-family: "inter", helvetica, arial;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.8em;
+  padding: 5px;
+  color: white;
+}
+.savannah_img {
+  position: absolute;
+  opacity: 15%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.savannah_des {
+  background-color: #ECEAE2;
+}
+.savannah_des_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 5%;
+}
+.savannah_des_content_img {
+  width: 250px;
+  height: auto;
+}
+.savannah_des_content_img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 60px;
+}
+.savannah_des_content_txt {
+  padding: 30px 0;
+}
+.savannah_des_content_txt p {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.savannah_des_content_txt h2 {
+  text-align: center;
+  font-family: "inter", helvetica, arial;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.4em;
+  letter-spacing: -0.05em;
+  color: #0f0f0f;
+}
+
+.deck_content_cards {
+  background-color: #F8F5EA;
+}
+.deck_content_cards2 {
+  background-color: #ECEAE2;
+}
+.deck_content_cards, .deck_content_cards2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 5%;
+}
+.deck_content_cards_img, .deck_content_cards2_img {
+  width: 250px;
+  height: auto;
+}
+.deck_content_cards_img img, .deck_content_cards2_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.deck_content_cards_txt, .deck_content_cards2_txt {
+  padding: 20px 0;
+  text-align: center;
+  width: 300px;
+}
+.deck_content_cards_txt h2, .deck_content_cards2_txt h2 {
+  font-family: "Jacques Francois", serif;
+  font-weight: 200;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+.deck_content_cards_txt p, .deck_content_cards2_txt p {
+  font-family: "inter", helvetica, arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #000000;
+}
+
+.merch {
+  background-color: #ECEAE2;
+}
+.merch_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10% 60px;
+}
+.merch_items_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.merch_items_txt h2 {
+  font-family: "inter", helvetica, arial;
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+}
+.merch_items_txt_bttn {
+  padding: 30px 0;
+}
+.merch_items_txt_bttn button {
+  cursor: pointer;
+  color: white;
+  background-color: #012F3D;
+  padding: 12px 40px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+}
+.merch_items_img {
+  width: 300px;
+}
+.merch_items_img img {
+  width: 100%;
 }
 
 /*------------------------------
@@ -215,6 +455,10 @@ footer img {
   }
   .navbar_links li {
     padding: 0px 15px;
+    transition: 1s;
+  }
+  .navbar_links li:hover {
+    translate: 5px 0px;
   }
   .logo {
     cursor: pointer;
@@ -262,13 +506,187 @@ footer img {
   }
   .header_content_img {
     width: 70%;
+    animation: slideUp 1s ease 1;
   }
   .header_content_img img:hover {
     width: 100%;
   }
   .header_content_title {
     font-size: 56px;
-    animation: slideUp 0.5s ease-in-out 1;
+    animation: slideUp 0.5s ease 1;
+  }
+  .header_bttn {
+    display: none;
+  }
+  /*------------------------------
+      INDEX: CARDS
+  -------------------------------*/
+  .cards_content_txt {
+    font-size: 28px;
+    padding: 10px 20%;
+  }
+  .cards_content_img {
+    transition: 1s;
+  }
+  .cards_content_img:hover {
+    translate: 0 -5px;
+  }
+  .cards_content_img img {
+    width: 80%;
+  }
+  .cards_content_bttn {
+    transition: 0.5s;
+  }
+  .cards_content_bttn:hover {
+    translate: 0 -10px;
+  }
+  /*------------------------------
+      INDEX: CARDDECK
+  -------------------------------*/
+  .carddeck_cards {
+    flex-direction: row-reverse;
+    padding: 70px 10%;
+  }
+  .carddeck_cards_txt {
+    align-items: flex-start;
+    padding-left: 60px;
+  }
+  .carddeck_cards_txt p,
+  .carddeck_cards_txt h2 {
+    text-align: left;
+  }
+  .carddeck_cards_txt p {
+    padding: 5px 0;
+  }
+  .carddeck_cards_txt h2 {
+    font-size: 32px;
+  }
+  .carddeck_cards_txt_bttn button {
+    transition: 0.5s;
+  }
+  .carddeck_cards_txt_bttn button:hover {
+    background-color: #064d63;
+    translate: 0 -10px;
+  }
+  .carddeck_cards_img {
+    animation: ramdon 4s ease-in-out infinite;
+  }
+  .carddeck_cards_img img {
+    width: 300px;
+  }
+  /*------------------------------
+      SAVANNAH
+  -------------------------------*/
+  .savannah {
+    height: 70vh;
+  }
+  .savannah_intro {
+    padding: 80px 20%;
+  }
+  .savannah_intro_title h2 {
+    font-size: 38px;
+    animation: slideUp 1s ease 1;
+  }
+  .savannah_intro_title p {
+    font-size: 18px;
+    line-height: 1.8em;
+    padding: 5px;
+    color: white;
+    animation: slideUp 1.5s ease 1;
+  }
+  .savannah_des_content {
+    display: flex;
+    flex-direction: Row;
+    padding: 80px 15%;
+  }
+  .savannah_des_content_img {
+    width: 1300px;
+  }
+  .savannah_des_content_img img {
+    border-radius: 60px;
+  }
+  .savannah_des_content_txt {
+    padding: 30px 0px 30px 60px;
+  }
+  .savannah_des_content_txt p {
+    text-align: left;
+  }
+  .savannah_des_content_txt h2 {
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.4em;
+    letter-spacing: -0.03em;
+  }
+  /*------------------------------
+      THE DECK
+  -------------------------------*/
+  .deck_content_cards {
+    flex-direction: row;
+  }
+  .deck_content_cards_txt {
+    animation: sideLeft 1s ease 1;
+    padding-left: 40px;
+    text-align: left;
+  }
+  .deck_content_cards_img {
+    animation: sideRight 1s ease 1;
+  }
+  .deck_content_cards_img img {
+    transition: 1s;
+  }
+  .deck_content_cards_img img:hover {
+    width: 105%;
+    rotate: -1deg;
+  }
+  .deck_content_cards2 {
+    flex-direction: row-reverse;
+  }
+  .deck_content_cards2_txt {
+    animation: sideRight 2s ease 1;
+    padding-right: 40px;
+    text-align: right;
+  }
+  .deck_content_cards2_img {
+    animation: sideLeft 2s ease 1;
+  }
+  .deck_content_cards2_img img {
+    transition: 1s;
+  }
+  .deck_content_cards2_img img:hover {
+    width: 105%;
+    rotate: 1deg;
+  }
+  .merch_items {
+    flex-direction: row-reverse;
+    padding: 20px 15% 60px;
+  }
+  .merch_items_txt {
+    align-items: flex-end;
+    width: 60%;
+    padding-right: 50px;
+    animation: sideRight 1.5s ease 1;
+  }
+  .merch_items_txt h2 {
+    font-size: 36px;
+    text-align: right;
+  }
+  .merch_items_txt_bttn button {
+    transition: 0.5s;
+  }
+  .merch_items_txt_bttn button:hover {
+    background-color: #064d63;
+    translate: 0 -10px;
+  }
+  .merch_items_img {
+    width: 40%;
+    transition: 1s;
+    animation: sideLeft 2s ease 1;
+  }
+  .merch_items_img:hover {
+    width: 45%;
+  }
+  .merch_items_img img {
+    width: 120%;
   }
   /*------------------------------
        FOOTER
@@ -315,6 +733,53 @@ footer img {
   }
   .header_content_title {
     font-size: 70px;
+  }
+  /*------------------------------
+      INDEX: CARDS
+  -------------------------------*/
+  .cards_content_txt {
+    padding: 10px 20%;
+  }
+  .carddeck_cards {
+    padding: 70px 20%;
+  }
+  .carddeck_cards_txt h2 {
+    font-size: 48px;
+  }
+  /*------------------------------
+      SAVANNAH
+  -------------------------------*/
+  .savannah_des_content {
+    padding: 100px 20%;
+  }
+  .savannah_des_content_txt {
+    padding: 30px 0px 30px 60px;
+  }
+  .savannah_des_content_txt h2 {
+    font-size: 36px;
+  }
+  .merch_items_txt {
+    width: 50%;
+  }
+  .merch_items_txt h2 {
+    font-size: 48px;
+    text-align: right;
+  }
+  .merch_items_txt_bttn button {
+    transition: 0.5s;
+  }
+  .merch_items_txt_bttn button:hover {
+    background-color: #064d63;
+    translate: 0 -10px;
+  }
+  .merch_items_img {
+    width: 50%;
+  }
+  .merch_items_img:hover {
+    width: 55%;
+  }
+  .merch_items_img img {
+    width: 100%;
   }
   /*------------------------------
        FOOTER

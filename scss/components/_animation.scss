@@ -8,3 +8,42 @@
         opacity: 100%;
     }
 }
+
+@keyframes sideRight{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+
+@keyframes sideLeft{
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes ramdon {
+    0% {
+        transform: translateY(0px);
+
+    }
+
+    50%{
+        transform: translateY(20px);
+
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
