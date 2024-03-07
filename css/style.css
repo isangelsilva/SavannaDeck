@@ -104,7 +104,7 @@
   display: none;
 }
 
-.navbar_links_icons {
+.navbar_links_icons, .navbar_links_icons_neg {
   display: flex;
   width: 60px;
   height: 60px;
@@ -112,10 +112,18 @@
   border-radius: 10px;
 }
 
-.navbar_links_icons_img {
+.navbar_links_icons_neg {
+  border: 1px solid #ffffff;
+}
+
+.navbar_links_icons_img, .navbar_links_icons_img_neg {
   object-fit: contain;
   width: 100%;
   padding: 8px;
+}
+
+.navbar_links_icons_img_neg {
+  filter: invert(1);
 }
 
 footer {
@@ -476,7 +484,7 @@ footer img {
   /*------------------------------
        NAVBAR
   -------------------------------*/
-  .navbar_links_icons {
+  .navbar_links_icons, .navbar_links_icons_neg {
     display: none;
   }
 }
@@ -518,7 +526,7 @@ footer img {
   .navbar_links_textneg {
     color: white;
   }
-  .navbar_links_icons {
+  .navbar_links_icons, .navbar_links_icons_neg {
     display: none;
   }
   .bttn {
@@ -808,6 +816,9 @@ footer img {
   /*------------------------------
           THE MERCH
   -------------------------------*/
+  .merch_items {
+    padding: 20px 20% 60px;
+  }
   .merch_items_txt {
     width: 50%;
   }
@@ -832,7 +843,7 @@ footer img {
     width: 100%;
   }
   .store {
-    padding: 0 20% 60px;
+    padding: 0 25% 60px;
   }
   .merch_title {
     font-size: 36px;

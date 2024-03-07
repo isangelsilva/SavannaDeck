@@ -7,7 +7,7 @@
          NAVBAR
     -------------------------------*/
 
-    .navbar_links_icons {
+    .navbar_links_icons, .navbar_links_icons_neg {
         display: none;
     }
 }
@@ -68,7 +68,7 @@
         color: white;
     }
 
-    .navbar_links_icons {
+    .navbar_links_icons, .navbar_links_icons_neg {
         display: none;
     }
 
@@ -547,6 +547,7 @@
     .merch {
 
         &_items {
+            padding: 20px 20% 60px;
 
             &_txt {
                 width: 50%;
@@ -582,9 +583,10 @@
     }
 
     .store {
-        padding: 0 20% 60px;
-
+        padding: 0 25% 60px;
+    
         &_items {
+    
             & img {     
             }
     
