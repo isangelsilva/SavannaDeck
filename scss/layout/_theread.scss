@@ -36,7 +36,7 @@
                 margin: auto;
                 transition: 1s;
                 &:hover{
-                    width: 110%;
+                    scale: 1.2;
                 }
 
             }
@@ -58,13 +58,14 @@
 }
 .contact_form{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+       
 }
 
 
 input{
     width: 100%;
-    font-size: 30px;
+    font-size: 26px;
     border-radius: 10px;
    border: 0px;
    background-color: #FFFDF4;
@@ -72,5 +73,6 @@ input{
 
 label{
     width: 100%;
-    font-size: 40px;
+    font-size: 26px;
 }
+

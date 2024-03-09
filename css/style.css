@@ -512,7 +512,7 @@ footer img {
   transition: 1s;
 }
 .read_intro_img img:hover {
-  width: 110%;
+  scale: 1.2;
 }
 
 .contact {
@@ -529,7 +529,7 @@ footer img {
 
 input {
   width: 100%;
-  font-size: 30px;
+  font-size: 26px;
   border-radius: 10px;
   border: 0px;
   background-color: #FFFDF4;
@@ -537,7 +537,7 @@ input {
 
 label {
   width: 100%;
-  font-size: 40px;
+  font-size: 26px;
 }
 
 /*------------------------------
