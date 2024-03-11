@@ -1,0 +1,13 @@
+.bttn_green {
+    margin-top: 25px;
+
+    & button {
+        cursor: pointer;
+        color: white;
+        background-color: $mainColor;
+        padding: 12px 40px;
+        border: solid 1px transparent;
+        border-radius: 10px;
+
+    }
+}

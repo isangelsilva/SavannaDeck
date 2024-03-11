@@ -31,6 +31,18 @@
 /*------------------------------
      COMPONETS
 -------------------------------*/
+.bttn_green {
+  margin-top: 25px;
+}
+.bttn_green button {
+  cursor: pointer;
+  color: white;
+  background-color: #012F3D;
+  padding: 12px 40px;
+  border: solid 1px transparent;
+  border-radius: 10px;
+}
+
 @keyframes slideUp {
   from {
     transform: translateY(50px);
@@ -503,44 +515,44 @@ footer img {
   height: 300px;
   border-radius: 100%;
   overflow: hidden;
-  transition: 1s;
-}
-.read_intro_img:hover {
-  scale: 1.1;
 }
 .read_intro_img img {
   width: 100%;
   object-fit: cover;
   margin: auto;
-  transition: 1.5s;
-}
-.read_intro_img img:hover {
-  scale: 1.2;
 }
 
 .contact {
   background-color: #ECEAE2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 60px 20%;
 }
-
-.contact_form {
+.contact_form_info, .contact_form_date {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.contact_form_date {
+  margin-top: 10px;
 }
 
 input {
+  padding: 5px;
   width: 100%;
-  font-size: 26px;
+  font-size: 1.1em;
   border-radius: 10px;
   border: 0px;
-  background-color: #FFFDF4;
+  background-color: #faf9f2;
+  color: #74715f;
+  font-weight: 400;
 }
 
 label {
   width: 100%;
-  font-size: 26px;
+  font-size: 1.2em;
 }
 
 /*------------------------------
@@ -550,7 +562,8 @@ label {
   /*------------------------------
        NAVBAR
   -------------------------------*/
-  .navbar_links_icons, .navbar_links_icons_neg {
+  .navbar_links_icons,
+  .navbar_links_icons_neg {
     display: none;
   }
 }
@@ -592,7 +605,8 @@ label {
   .navbar_links_textneg {
     color: white;
   }
-  .navbar_links_icons, .navbar_links_icons_neg {
+  .navbar_links_icons,
+  .navbar_links_icons_neg {
     display: none;
   }
   .bttn {
@@ -819,6 +833,28 @@ label {
   .read_intro_img {
     width: 350px;
     height: 350px;
+    transition: 1s;
+  }
+  .read_intro_img:hover {
+    scale: 1.1;
+  }
+  .read_intro_img img {
+    transition: 1.5s;
+  }
+  .read_intro_img img:hover {
+    scale: 1.2;
+  }
+  .contact_form {
+    display: flex;
+    gap: 20px;
+  }
+  .contact_form_info, .contact_form_date {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact_form_date {
+    margin-top: 0px;
   }
   /*------------------------------
        FOOTER
@@ -926,7 +962,7 @@ label {
     font-size: 36px;
   }
   .read_intro {
-    padding: 40px 20%;
+    padding: 40px 25%;
   }
   .read_intro_title {
     font-size: 4em;

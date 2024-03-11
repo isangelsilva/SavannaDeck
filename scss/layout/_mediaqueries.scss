@@ -7,7 +7,8 @@
          NAVBAR
     -------------------------------*/
 
-    .navbar_links_icons, .navbar_links_icons_neg {
+    .navbar_links_icons,
+    .navbar_links_icons_neg {
         display: none;
     }
 }
@@ -68,7 +69,8 @@
         color: white;
     }
 
-    .navbar_links_icons, .navbar_links_icons_neg {
+    .navbar_links_icons,
+    .navbar_links_icons_neg {
         display: none;
     }
 
@@ -348,8 +350,8 @@
         }
     }
 
-    
- /*------------------------------
+
+    /*------------------------------
         THE MERCH
 -------------------------------*/
 
@@ -388,7 +390,8 @@
                 width: 40%;
                 transition: 1s;
                 animation: sideLeft 2s ease 1;
-                &:hover{
+
+                &:hover {
                     width: 45%;
                 }
 
@@ -399,47 +402,70 @@
 
         }
 
-        &_title{
+        &_title {
             font-size: 36px;
         }
     }
 
     .store {
         padding: 0 15% 60px;
-
-        &_items {
-            & img {     
-            }
-    
-            & h3{
-            }
-        }
     }
-    
+
     .read {
-       
-    
+
+
         &_intro {
             padding: 40px 15%;
-           
+
             &_title {
                 font-size: 3em;
                 letter-spacing: -0.04em;
-            } 
-    
-    
+            }
+
+
             &_img {
                 width: 350px;
-                height: 350px;    
+                height: 350px;
+                transition: 1s;
+  
+                &:hover {
+                    scale: 1.1;
+                }
+
+                & img {
+                    transition: 1.5s;
+
+                    &:hover {
+                        scale: 1.2;
+                    }
+                }
             }
-    
-    
-    
+
+
+
         }
-    
-       
+
+
     }
-   
+
+    .contact {
+    
+        &_form {
+            display: flex;
+            gap: 20px;
+            &_info, &_date{
+                display: flex;
+                flex-direction: column;
+                gap:15px;
+            }
+            &_date{
+                margin-top: 0px;
+            }
+            
+        } 
+    }
+    
+    
 
 
     /*------------------------------
@@ -565,7 +591,7 @@
 
     }
 
- /*------------------------------
+    /*------------------------------
         THE MERCH
 -------------------------------*/
 
@@ -576,6 +602,7 @@
 
             &_txt {
                 width: 50%;
+
                 & h2 {
                     font-size: 48px;
                     text-align: right;
@@ -595,7 +622,8 @@
 
             &_img {
                 width: 50%;
-                &:hover{
+
+                &:hover {
                     width: 55%;
                 }
 
@@ -609,43 +637,35 @@
 
     .store {
         padding: 0 25% 60px;
-    
-        &_items {
-    
-            & img {     
-            }
-    
-            & h3{
-            }
-        }
+
     }
-    
-    .merch_title{
+
+    .merch_title {
         font-size: 36px;
     }
 
     .read {
-       
-    
+
+
         &_intro {
-            padding: 40px 20%;
-           
+            padding: 40px 25%;
+
             &_title {
                 font-size: 4em;
                 letter-spacing: -0.04em;
-            } 
-    
-    
+            }
+
+
             &_img {
                 width: 500px;
-                height: 500px;    
+                height: 500px;
             }
-    
-    
-    
+
+
+
         }
-    
-       
+
+
     }
 
     /*------------------------------

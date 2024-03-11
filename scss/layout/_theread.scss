@@ -2,22 +2,20 @@
     background-color: $mainColor;
 
     &_intro {
-       
+
         display: flex;
         flex-direction: column;
-        
-
         padding: 40px 10%;
-       text-align: center;
-       align-items: center;
-       
+        text-align: center;
+        align-items: center;
+
         &_title {
             font-family: $mainFont;
             font-weight: 600;
             font-size: 2.8em;
             letter-spacing: -0.04em;
             color: #ffffff;
-        } 
+        }
 
 
         &_img {
@@ -28,20 +26,14 @@
             width: 300px;
             height: 300px;
             border-radius: 100%;
-            overflow:hidden;   
-            transition: 1s;
-            &:hover{
-                scale: 1.1;
-            }
+            overflow: hidden;
+           
 
             & img {
                 width: 100%;
-                object-fit:cover;
+                object-fit: cover;
                 margin: auto;
-                transition: 1.5s;
-                &:hover{
-                    scale: 1.2;
-                }
+                
 
             }
         }
@@ -50,33 +42,45 @@
 
     }
 
-   
+
 }
 
 
-.contact{
+.contact {
     background-color: $bgColor;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 60px 20%;  
-}
-.contact_form{
-    display: flex;
-    flex-direction: column; 
-       
+    align-items: center;
+    padding: 60px 20%; 
+
+    &_form {
+        &_info, &_date{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        &_date{
+            margin-top: 10px;
+        }
+        
+    } 
 }
 
 
-input{
+input {
+    padding: 5px;
     width: 100%;
-    font-size: 26px;
+    font-size: 1.1em;
     border-radius: 10px;
-   border: 0px;
-   background-color: #FFFDF4;
+    border: 0px;
+    background-color: #faf9f2;
+    color: #74715f;
+    font-weight: 400;
+    
 }
 
-label{
+label {
     width: 100%;
-    font-size: 26px;
+    font-size: 1.2em;
 }
-
