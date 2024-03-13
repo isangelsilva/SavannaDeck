@@ -225,39 +225,47 @@ footer img {
   padding: 40px 0;
   animation: slideUp 1s ease 1;
   overflow: visible;
-}
-.header_content_img_bg {
-  position: absolute;
-  width: 150%;
-  translate: 50px 0;
-  animation: cards 3s ease-in-out infinite;
-}
-.header_content_img_bg2 {
-  position: absolute;
-  width: 150%;
-  translate: -50px 0;
-  overflow: hidden;
-  animation: cards 3s ease-in-out infinite;
-}
-.header_content_img_star1 {
-  position: absolute;
-  translate: 200px -150px;
-  scale: 0.4;
-}
-.header_content_img_star2 {
-  position: absolute;
-  translate: -250px 150px;
-  scale: 0.3;
-}
-.header_content_img_star3 {
-  position: absolute;
-  translate: -250px -200px;
-  scale: 0.4;
-}
-.header_content_img_star4 {
-  position: absolute;
-  translate: 200px 200px;
-  scale: 0.2;
+  /* &_bg{
+                 position: absolute;
+                 width: 150%;
+                 translate: 50px 0;
+                 animation: cards 3s ease-in-out infinite;
+             }
+
+             &_bg2{
+                 position: absolute;
+                 width: 150%;
+                 translate: -50px 0;
+                 overflow: hidden;
+
+                 animation: cards 3s ease-in-out infinite;
+             }
+
+
+             &_star1{
+                 position: absolute;
+                 translate: 200px -150px;
+                 scale: 0.4;
+             }
+
+             &_star2{
+                 position: absolute;
+                 translate: -250px 150px;
+                 scale: 0.3;
+             }
+
+             &_star3{
+                 position: absolute;
+                 translate: -250px -200px;
+                 scale: 0.4;
+             }
+
+             &_star4{
+                 position: absolute;
+                 translate: 200px 200px;
+                 scale: 0.2;
+             }
+  */
 }
 .header_content_img_cards {
   position: relative;
