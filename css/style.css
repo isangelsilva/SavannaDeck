@@ -28,21 +28,36 @@
   background-color: #DEC378;
 }
 
-.bttn_green {
-  margin-top: 25px;
-}
-.bttn_green button {
+/*------------------------------
+     COMPONETS
+-------------------------------*/
+.bttn_green button, .bttn_yellow button {
   cursor: pointer;
-  color: white;
-  background-color: #012F3D;
   padding: 12px 40px;
   border: solid 1px transparent;
   border-radius: 10px;
 }
 
-/*------------------------------
-     COMPONETS
--------------------------------*/
+.bttn_green button {
+  color: white;
+  background-color: #012F3D;
+  transition: 0.5s;
+}
+.bttn_green button:hover {
+  background-color: #064d63;
+  translate: 0 -5px;
+}
+
+.bttn_yellow button {
+  background-color: #DEC378;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.bttn_yellow button:hover {
+  background-color: #ffeebe;
+  border: solid 1px #8b7947;
+}
+
 @keyframes slideUp {
   from {
     transform: translateY(50px);
@@ -112,7 +127,7 @@
 }
 
 .navbar_links_text, .navbar_links_textneg,
-.bttn {
+.bttn_yellow {
   display: none;
 }
 
@@ -122,6 +137,12 @@
   height: 60px;
   border: 1px solid #000000;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+.navbar_links_icons:hover, .navbar_links_icons_neg:hover {
+  background-color: #DEC378;
+  scale: 1.1;
 }
 
 .navbar_links_icons_neg {
@@ -181,21 +202,35 @@ footer img {
   font-size: 40px;
   letter-spacing: -0.04em;
   color: #000000;
+  animation: slideUp 0.5s ease 1;
 }
 .header_content_img {
-  width: 80%;
+  width: 65%;
   margin: auto;
-  padding: 30px;
+  padding: 40px 0;
+  overflow: visible;
+  animation: slideUp 1s ease 1;
 }
 .header_content_img img {
-  width: 95%;
+  object-fit: cover;
+  width: 100%;
   transition: 1s;
 }
-.header_bttn button {
+.header_content_img img:hover {
+  scale: 1.05;
+}
+.header_content_bttn button {
+  cursor: pointer;
   background-color: #DEC378;
   padding: 12px 40px;
   border: solid 1px transparent;
   border-radius: 30px;
+  transition: 1s;
+}
+.header_content_bttn button:hover {
+  background-color: #ffeebe;
+  border: solid 1px #8b7947;
+  translate: 0 -10px;
 }
 
 .cards {
@@ -609,20 +644,11 @@ label {
   .navbar_links_icons_neg {
     display: none;
   }
-  .bttn {
+  /*------------------------------
+      STUFFS
+  -------------------------------*/
+  .bttn_yellow {
     display: block;
-  }
-  .bttn button {
-    cursor: pointer;
-    background-color: #DEC378;
-    padding: 9px 25px;
-    border: solid 1px transparent;
-    border-radius: 30px;
-    transition: 0.5s;
-  }
-  .bttn button:hover {
-    background-color: #ffeebe;
-    border: solid 1px #8b7947;
   }
   /*------------------------------
       INDEX: HEADER
@@ -632,16 +658,11 @@ label {
   }
   .header_content_img {
     width: 70%;
-    animation: slideUp 1s ease 1;
-  }
-  .header_content_img img:hover {
-    width: 100%;
   }
   .header_content_title {
     font-size: 56px;
-    animation: slideUp 0.5s ease 1;
   }
-  .header_bttn {
+  .header_content_bttn {
     display: none;
   }
   /*------------------------------
@@ -686,13 +707,6 @@ label {
   }
   .carddeck_cards_txt h2 {
     font-size: 32px;
-  }
-  .carddeck_cards_txt_bttn button {
-    transition: 0.5s;
-  }
-  .carddeck_cards_txt_bttn button:hover {
-    background-color: #064d63;
-    translate: 0 -10px;
   }
   .carddeck_cards_img {
     animation: ramdon 4s ease-in-out infinite;

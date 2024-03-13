@@ -30,7 +30,7 @@
 }
 
 .navbar_links_text, .navbar_links_textneg,
-.bttn {
+.bttn_yellow {
         display: none;
 }
 
@@ -39,7 +39,13 @@
         width: 60px;
         height: 60px;
         border: 1px solid #000000;
-        border-radius: 10px;    
+        border-radius: 10px; 
+        background-color: rgba(0, 0, 0, 0); 
+        transition: 0.3s;
+        &:hover{
+                background-color: $secondaryColor;
+                scale: 1.1;
+        }  
 }
 
 .navbar_links_icons_neg {
