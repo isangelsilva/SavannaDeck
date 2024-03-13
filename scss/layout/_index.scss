@@ -17,13 +17,62 @@
         }
 
         &_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
             width: 65%;
             margin: auto;
             padding: 40px 0;
-            overflow: visible;
             animation: slideUp 1s ease 1;
+            overflow: visible;
 
-            & img {
+            &_bg{
+                position: absolute;
+                width: 150%;
+                translate: 50px 0;
+                animation: cards 3s ease-in-out infinite;
+            }
+
+            &_bg2{
+                position: absolute;
+                width: 150%;
+                translate: -50px 0;
+                overflow: hidden;
+                
+                animation: cards 3s ease-in-out infinite;
+            }
+
+
+            &_star1{
+                position: absolute;
+                translate: 200px -150px;
+                scale: 0.4;
+            }
+
+            &_star2{
+                position: absolute;
+                translate: -250px 150px;
+                scale: 0.3;
+            }
+
+            &_star3{
+                position: absolute;
+                translate: -250px -200px;
+                scale: 0.4;
+            }
+
+            &_star4{
+                position: absolute;
+                translate: 200px 200px;
+                scale: 0.2;
+            }
+
+
+
+
+            &_cards {
+                position: relative;
                 object-fit: cover;
                 width: 100%;
                 transition: 1s;
