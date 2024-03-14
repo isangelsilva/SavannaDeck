@@ -161,7 +161,6 @@
 }
 .navbar_links_icons:hover, .navbar_links_icons_neg:hover {
   background-color: #DEC378;
-  scale: 1.1;
 }
 
 .navbar_links_icons_neg {
